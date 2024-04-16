@@ -34,3 +34,9 @@ input {
   margin: 0 2rem;
   width: 500px;
 }
+
+button {
+  padding: 0.7rem;
+  background-color: #cca353;
+  cursor: pointer;
+}
