@@ -10,7 +10,7 @@ const Business = () => {
     city: "Flavortown",
     state: "NY",
     zipCode: "10101",
-    category: "italian",
+    category: "Italian",
     rating: 4.5,
     reviewCount: 95,
   }

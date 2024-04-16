@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import styles from "./SearchBar.module.css";
 
@@ -26,9 +25,10 @@ const SearchBar = () => {
         <input placeholder="Where?" />
       </div>
       <div className={styles.SearchBarSubmit}>
-        <a href="#">Let's Go</a>
+        <a>Let's Go</a>
       </div>
     </div>
   );
 };
+
 export default SearchBar;
