@@ -1,5 +1,6 @@
 {
   "cSpell.words": [
+    "Businness",
     "Chakra",
     "Marginotto",
     "Paddington"
@@ -56,5 +57,8 @@
   "better-comments.highlightPlainText": true,
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "cSpell.enableFiletypes": [
+    "!css"
+  ]
 }

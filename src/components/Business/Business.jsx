@@ -1,7 +1,7 @@
 import React from "react";
+import styles from "./Business.module.css";
 
 const Business = () => {
-
   const business = {
     imageSrc:
       "https://content.codecademy.com/programs/react/ravenous/pizza.jpg",
@@ -13,23 +13,26 @@ const Business = () => {
     category: "Italian",
     rating: 4.5,
     reviewCount: 95,
-  }
+  };
 
   return (
-    <div>
+    <div className={styles.Business}>
+      <div className={styles.ImageContainer}>
+        <img src={business.imageSrc} alt={business.name} />
+      </div>
       <h1>{business.name}</h1>
-      <img src={business.imageSrc} alt={business.name} />
-      <ul>
-        <li>{business.address}</li>
-        <li>{business.city}</li>
-        <li>{business.zipCode}</li>
-      </ul>
-      <ul>
-        <li>{business.category}</li>
-        <li>{business.rating}</li> 
-        <li>{business.reviewCount}</li>
-      </ul>
+      <div className={styles.BusinessInformation}>
+        <div className={styles.BusinessAddress}></div>
+          <p>{business.address}</p>
+          <p>{business.city}</p>
+          <p>{`${business.zipCode} ${business.state}`}</p>
+        <div className={styles.BusinessReviews}>
+          <h3>{business.category.toUpperCase()}</h3>
+          <h3>{`${business.rating} stars`}</h3>
+          <p>{`${business.reviewCount} reviews`}</p>
+        </div>
+      </div>
     </div>
-  ); 
+  );
 };
 export default Business;
