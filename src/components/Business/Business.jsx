@@ -23,9 +23,9 @@ const Business = () => {
       <h1>{business.name}</h1>
       <div className={styles.BusinessInformation}>
         <div className={styles.BusinessAddress}></div>
-          <p>{business.address}</p>
-          <p>{business.city}</p>
-          <p>{`${business.zipCode} ${business.state}`}</p>
+        <p>{business.address}</p>
+        <p>{business.city}</p>
+        <p>{`${business.zipCode} ${business.state}`}</p>
         <div className={styles.BusinessReviews}>
           <h3>{business.category.toUpperCase()}</h3>
           <h3>{`${business.rating} stars`}</h3>
