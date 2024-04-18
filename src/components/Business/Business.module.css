@@ -1,4 +1,45 @@
 .Businness {
+  display: block;
+  border: 3px solid goldenrod;
+  width: 300px;
+  padding: 1em;
+  max-height: 300px;
+  position: relative;
+}
+
+.ImageContainer {
+  position: relative;
+  width: 250px;
+  padding: 1rem;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.BusinessInformation {
   display: flex;
-  
+  flex-flow: row wrap;
+  width: 300px;
+  height: 100px;
+  font-weight: 550;
+  font-size: 14px;
+  padding: 0 1rem;
+}
+
+.BusinessReviews,
+.BusinessAddress {
+  margin: 0 10px;
+  text-align: justify;
+}
+
+.BusinessReviews {
+  line-height: 1.2;
+}
+
+.BusinessAddress {
+  line-height: 1.4;
 }

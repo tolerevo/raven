@@ -15,23 +15,25 @@ const Business = () => {
   };
 
   return (
-    <div className={styles.Business}>
+    <section className={styles.Business}>
       <div className={styles.ImageContainer}>
         <img src={business.imageSrc} alt={business.name} />
+        <h1>{business.name}</h1>
       </div>
-      <h1>{business.name}</h1>
       <div className={styles.BusinessInformation}>
-        <div className={styles.BusinessAddress}></div>
-        <p>{business.address}</p>
-        <p>{business.city}</p>
-        <p>{`${business.zipCode} ${business.state}`}</p>
+        <div className={styles.BusinessAddress}>
+          <p style={{fontSize: 15}}>{business.address}</p>
+          <p>{business.city}</p>
+          <p>{`${business.zipCode} ${business.state}`}</p>
+        </div>
+        <br />
         <div className={styles.BusinessReviews}>
           <h3>{business.category.toUpperCase()}</h3>
-          <h3>{`${business.rating} stars`}</h3>
+          <h3 style={{color: "goldenrod"}}>{`${business.rating} stars`}</h3>
           <p>{`${business.reviewCount} reviews`}</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Business;
