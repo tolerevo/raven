@@ -3,22 +3,12 @@ import Business from "../Business/Business";
 //import { StylesProvider } from "@chakra-ui/react";//
 import styles from "./BusinessList.module.css";
 
-const businessArr = [
-  Business,
-  Business,
-  Business,
-  Business,
-  Business,
-  Business,
-];
-
-const BusinessList = () => {
+const BusinessList = ({ businesses }) => {
   return (
     <section className={styles.BusinessList}>
-      {businessArr.map((Business, i) => {
-        return <Business className={styles.businessCard} key={i} />;
+      {businesses.map((business, i) => {
+        return <Business business={business} key={business.name} />;
       })}
-      ;
     </section>
   );
 };
