@@ -35,6 +35,7 @@ const SearchBar = ({ searchYelp }) => {
     event.preventDefault();
     searchYelp(term, location, sortBy);
   };
+
   const renderSortByOptions = () => {
     return Object.keys(sortByOptions).map((sortByOption) => {
       let sortByOptionValue = sortByOptions[sortByOption];
