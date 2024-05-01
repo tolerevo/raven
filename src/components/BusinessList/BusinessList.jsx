@@ -3,13 +3,14 @@ import Business from "../Business/Business";
 //import { StylesProvider } from "@chakra-ui/react";//
 import styles from "./BusinessList.module.css";
 
+
 const BusinessList = ({ businesses }) => {
   return (
-    <section className={styles.BusinessList}>
-      {businesses.map((business, i) => {
+    <div className={styles.BusinessList}>
+      {businesses.map((business) => {
         return <Business business={business} key={business.name} />;
       })}
-    </section>
+    </div>
   );
 };
 export default BusinessList;

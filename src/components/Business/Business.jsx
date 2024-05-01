@@ -1,7 +1,7 @@
 import styles from "./Business.module.css";
 import React from "react";
 
-const Business = ({business}) => {
+const Business = ({ business }) => {
   return (
     <div className={styles.Business}>
       <div className={styles.imageContainer}>
